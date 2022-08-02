@@ -6,8 +6,7 @@ int main() {
     float a, b;
     char c;
     
-    scanf("%f%f%c", &a, &b, &c);  
-    if (c != '\n') {
+    if (scanf("%f%f%c", &a, &b, &c) != 3 && c != '\n') {
         printf("Incorrect input\n");
         return 1;
     }
