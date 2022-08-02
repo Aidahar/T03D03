@@ -1,13 +1,14 @@
-#include <math.h>
 #include <stdio.h>
+#include <math.h>
 
 float func(float x);
 
 int main() {
     float x;
-    char c;
-    scanf("%f%c", &x, &c);
-    if ((c != '\n') || (x == 0.0)) {
+//    char c;
+//    scanf("%f%c", &x, &c); 
+    if (scanf("%f", &x) != 1 || x == 0.0) {
+//    if ((c != '\n') || (x == 0.0)) {
         printf("n/a\n");
         return 1;
     } else {
